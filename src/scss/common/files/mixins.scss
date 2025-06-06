@@ -1,0 +1,142 @@
+@mixin descr-l {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  // @media (min-width: 1920px) {
+  //   font-size: 24px;
+  //   line-height: 116%;
+  // }
+}
+@mixin descr-m {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 17px;
+  // @media(min-width: 1920px) {
+  //   font-size: 20px;
+  //   line-height: 96%;
+  // }
+}
+@mixin descr-s {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  @media (min-width: 1920px) {
+    font-size: 16px;
+    line-height: 116%;
+  }
+}
+@mixin body-l {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  // @media (min-width: 1920px) {
+  //   font-size: 30px;
+  //   line-height: 130%;
+  // }
+}
+@mixin body-m {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  // @media (min-width: 1920px) {
+  //   font-size: 24px;
+  //   line-height: 140%;
+  // }
+}
+@mixin body-s {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  @media (min-width: 1920px) {
+    font-size: 18px;
+    line-height: 120%;
+  }
+}
+@mixin display-l {
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 69px;
+  // @media (min-width: 1920px) {
+  //   font-size: 96px;
+  //   line-height: 96%;
+  // }
+}
+@mixin display-m {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 38px;
+  @media (min-width: 1920px) {
+    font-size: 56px;
+    line-height: 96%;
+  }
+}
+@mixin h1 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 39px;
+  letter-spacing: -1px;
+  @media (max-width: $tab) {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 48px;
+    line-height: 110%;
+  }
+}
+@mixin h2 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: -1px;
+  @media (max-width: $tab) {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  // @media (min-width: 1920px) {
+  //   font-size: 32px;
+  //   line-height: 110%;
+  // }
+}
+@mixin h3 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 30px;
+  @media (max-width: $tab) {
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: -1px;
+  }
+  // @media (min-width: 1920px) {
+  //   font-size: 36px;
+  //   line-height: 110%;
+  // }
+}
+@mixin h4 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  @media (max-width: $tab) {
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: -1px;
+  }
+  // @media (min-width: 1920px) {
+  //   font-size: 32px;
+  //   line-height: 110%;
+  // }
+}
+@mixin h5 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  @media (max-width: $tab) {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -1px;
+  }
+  // @media (min-width: 1920px) {
+  //   font-size: 24px;
+  //   line-height: 110%;
+  // }
+}

@@ -1,0 +1,122 @@
+.price-fix-table {
+  display: grid;
+  grid-template-columns: 0.34fr 1fr;
+  background: var(--gray-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  opacity: 0;
+  transition: var(--trs-300);
+  @media (max-width: $desktop-md-2) {
+    grid-template-columns: 0.3fr 1fr;
+  }
+  @media (max-width: $desktop-sm) {
+    grid-template-columns: 0.5fr 1fr;
+  }
+  @media (max-width: $tab) {
+    display: none;
+  }
+  &.active {
+    opacity: 1;
+  }
+  .table-fix {
+    padding-bottom: 26px;
+    position: relative;
+    padding-top: 20px;
+
+    &:after {
+      content: "";
+      width: 1px;
+      height: 57%;
+      background: var(--line-color);
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .title {
+      text-transform: uppercase;
+      @include h5;
+    }
+    .descr {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-transform: uppercase;
+      @include descr-s;
+      margin-top: 12px;
+    }
+  }
+  .price-fix-table-swiper-wrapper {
+    position: relative;
+    .navigation {
+      z-index: 2;
+      left: -24px;
+      top: 32px;
+      right: -24px;
+      bottom: auto;
+      @media (max-width: $tab-sm) {
+        left: -14px;
+        right: -14px;
+      }
+    }
+    .price-fix-table-swiper-container {
+      overflow: hidden;
+      height: 100%;
+      .price-fix-table-swiper {
+        position: relative;
+        .swiper-wrapper {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+        }
+        .swiper-slide {
+          padding-bottom: 26px;
+          padding-left: 41px;
+          padding-right: 41px;
+          padding-top: 20px;
+          position: relative;
+          height: fit-content;
+          &:after {
+            content: "";
+            width: 1px;
+            height: 57%;
+            background: var(--line-color);
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+          }
+          .title {
+            @include h5;
+            text-transform: uppercase;
+          }
+          .download-ttn-btn {
+            color: var(--accent-2-color);
+            @include descr-s;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            padding: 0;
+            margin-top: 14px;
+            &:hover {
+              img {
+                opacity: 1;
+              }
+            }
+            img {
+              opacity: 0;
+              transition: var(--trs-300);
+            }
+          }
+        }
+      }
+    }
+  }
+}

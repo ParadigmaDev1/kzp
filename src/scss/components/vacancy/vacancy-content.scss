@@ -1,0 +1,279 @@
+.vacancy-content {
+  margin-top: 36px;
+  margin-bottom: 128px;
+  @media (max-width: $tab) {
+    margin-bottom: 80px;
+    margin-top: 28px;
+  }
+  .vacancy-content-inner {
+    display: grid;
+    grid-template-columns: 1fr 408px;
+    gap: 48px;
+    @media (max-width: $tab) {
+      gap: 24px;
+      grid-template-columns: 1fr 300px;
+    }
+    @media (max-width: $tab-sm) {
+      gap: 80px;
+      grid-template-columns: 1fr;
+    }
+  }
+  .vacancy-info-map {
+    margin-top: 48px;
+    h3 {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      @include h2;
+    }
+
+    .address {
+      @include body-l;
+    }
+    .map-wrapper {
+      position: relative;
+      padding-bottom: 31%;
+      margin-top: 20px;
+      .map {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+    }
+  }
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    .vacancy-info {
+      .top {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        .price {
+          margin-right: 20px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
+      .descr {
+        @include body-l;
+        margin-top: 28px;
+        @media (max-width: $tab) {
+          @include body-m;
+          margin-top: 20px;
+        }
+      }
+      .specification {
+        display: flex;
+        flex-direction: column;
+        margin-top: 28px;
+        gap: 6px;
+        list-style: none;
+        @media (max-width: $tab) {
+          margin-top: 20px;
+        }
+        @media (max-width: $mob) {
+          gap: 16px;
+        }
+        li {
+          display: grid;
+          grid-template-columns: 150px 1fr;
+          gap: 24px;
+          @media (max-width: $mob) {
+            grid-template-columns: 1fr;
+            gap: 2px;
+          }
+          p,
+          span {
+            @include body-m;
+          }
+          span {
+            color: var(--gray-2-color);
+          }
+        }
+      }
+      h3 {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        @include h2;
+      }
+      ul {
+        gap: 10px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        list-style: none;
+        li {
+          position: relative;
+          padding-left: 40px;
+          @include body-m;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background: var(--accent-1-color);
+            border-radius: 999px;
+          }
+        }
+      }
+
+      .address {
+        @include body-l;
+      }
+      .map-wrapper {
+        position: relative;
+        padding-bottom: 51%;
+        margin-top: 20px;
+        .map {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+        }
+      }
+    }
+  }
+  .form-block {
+    .sticky-block {
+      top: 30px !important;
+    }
+    .form {
+      h3 {
+        text-transform: uppercase;
+        @include h2;
+      }
+
+      .inputs {
+        margin-top: 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        @media (max-width: $tab) {
+          margin-top: 36px;
+        }
+        textarea {
+          height: 100%;
+          min-height: 140px;
+          max-height: 320px;
+          &::-webkit-scrollbar {
+            width: 10px;
+          }
+
+          &::-webkit-scrollbar-track {
+            background-color: #f0f0f0;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: var(--accent-1-color);
+            border-radius: 999px;
+          }
+        }
+        .files {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          margin-top: 16px;
+
+          .btn {
+            width: 100%;
+            text-align: left;
+          }
+        }
+        .file-input-wrapper {
+          display: flex;
+          align-items: center;
+        }
+        .upload-file-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          width: 100%;
+          &.hidden {
+            display: none;
+          }
+          p {
+            @include body-s;
+            color: var(--gray-2-color);
+            margin-left: 15px;
+          }
+        }
+        .output-file-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          .clear-file {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            &:hover {
+              svg {
+                path {
+                  stroke: var(--accent-2-color);
+                }
+              }
+            }
+          }
+          &.hidden {
+            display: none;
+          }
+          p {
+            @include body-s;
+          }
+        }
+        .file-btn {
+          position: relative;
+          @media (max-width: $pre-mob) {
+            width: 100%;
+          }
+          &.hidden {
+            display: none;
+          }
+          input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            cursor: pointer;
+          }
+        }
+      }
+      .form-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 24px;
+
+        .checkbox-warpper {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          p {
+            @include body-s;
+            a {
+              color: var(--accent-2-color);
+            }
+          }
+        }
+        .btn {
+          @include descr-m;
+          padding: 0 24px;
+          height: 44px;
+          width: fit-content;
+          @media (max-width: $pre-mob) {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

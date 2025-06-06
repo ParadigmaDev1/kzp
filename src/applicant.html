@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/components/head.html', { 'title':'template', })
+  <body>
+    @@include('html/components/header-white.html', { })
+    @@include('html/components/menu.html', { })
+
+    <main>
+      @@include('html/components/applicant/applicant-hero.html', { })
+      @@include('html/components/applicant/applicant-advantages.html', { })
+      @@include('html/components/applicant/applicant-about.html', { })
+      @@include('html/components/applicant/applicant-info.html', { })
+      @@include('html/components/applicant/applicant-history.html', { })
+      @@include('html/components/applicant/applicant-vacancy.html', { })
+      @@include('html/components/applicant/applicant-alert.html', { })
+      @@include('html/components/contacts.html', { })
+    </main>
+    @@include('html/components/footer.html', { })
+    <div class="modals">
+      @@include('html/components/resume-modal.html', { })
+      @@include('html/components/call-modal.html', { })
+      @@include('html/components/success-modal.html', { })
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

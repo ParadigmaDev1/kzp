@@ -1,0 +1,24 @@
+.news-swiper-wrapper {
+  position: relative;
+  .news-swiper {
+    margin-top: 36px;
+    overflow: hidden;
+    @media (max-width: $tab) {
+      margin-top: 32px;
+    }
+  }
+  .navigation {
+    left: -24px;
+    right: -24px;
+    @media (max-width: $tab-sm) {
+      top: -25%;
+    }
+    @media (max-width: $tab-sm) {
+      left: -14px;
+      right: -14px;
+    }
+    @media (max-width: $mob) {
+      top: -43%;
+    }
+  }
+}

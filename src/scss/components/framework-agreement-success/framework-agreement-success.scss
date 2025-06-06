@@ -1,0 +1,58 @@
+.framework-agreement-success {
+  margin-top: 105px;
+  margin-bottom: 128px;
+  min-height: 66vh;
+  @media (max-width: $tab) {
+    margin-top: 85px;
+    margin-bottom: 0;
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--line-color);
+  }
+  h1 {
+    text-transform: uppercase;
+    @include h1;
+    margin-top: 28px;
+    @media (max-width: $tab) {
+      margin-top: 20px;
+    }
+  }
+  .framework-agreement-success-content {
+    display: grid;
+    grid-template-columns: 1fr 318px;
+    gap: 48px;
+    .framework-agreement-success-content-main {
+      margin-top: 36px;
+      .framework-agreement-success-info {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        border-top: 1px solid var(--line-color);
+        border-bottom: 1px solid var(--line-color);
+        display: flex;
+        gap: 45px;
+        img {
+          width: 70px;
+          height: 70px;
+        }
+        .framework-agreement-success-info-content {
+          display: flex;
+          flex-direction: column;
+          .title {
+            text-transform: uppercase;
+            @include h4;
+            margin-top: 0;
+          }
+          p {
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 140%;
+          }
+          .btn {
+            width: fit-content;
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+  }
+}

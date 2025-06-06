@@ -1,0 +1,67 @@
+.applicant-info {
+  padding-top: 80px;
+  border-top: 1px solid var(--line-color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 128px;
+  @media (max-width: $tab) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: $tab-sm) {
+    padding-top: 0;
+    border-top: none;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .applicant-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    @media (max-width: $tab-sm) {
+      margin-bottom: 48px;
+      padding-top: 48px;
+      border-top: 1px solid var(--line-color);
+      gap: 20px;
+    }
+    &:first-child {
+      padding-right: 48px;
+      border-right: 1px solid var(--line-color);
+      @media (max-width: $tab-sm) {
+        padding-right: 0;
+        border-right: none;
+      }
+    }
+    &:last-child {
+      padding-left: 48px;
+      @media (max-width: $tab-sm) {
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+    }
+    .text-wrapper {
+      flex: 1;
+      h4 {
+        @include h2;
+        text-transform: uppercase;
+      }
+      .text {
+        margin-top: 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        @media (max-width: $tab) {
+          margin-top: 20px;
+        }
+      }
+    }
+    .image-wrapper {
+      position: relative;
+      padding-bottom: 67%;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

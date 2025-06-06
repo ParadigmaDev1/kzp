@@ -1,0 +1,123 @@
+// shared
+@import "./header.scss";
+@import "./hero-sm.scss";
+@import "./hero.scss";
+@import "./pwa-modal.scss";
+@import "./contacts.scss";
+@import "./footer.scss";
+@import "./advantage-list.scss";
+@import "./news-item.scss";
+@import "./news-swiper.scss";
+@import "./menu.scss";
+@import "./text-about.scss";
+@import "./menu-block.scss";
+@import "./filter.scss";
+@import "./pagination.scss";
+@import "./account.scss";
+@import "./date-picher.scss";
+
+// modals
+@import "./ttn-modal.scss";
+@import "./resume-modal.scss";
+@import "./success-modal.scss";
+@import "./call-modal.scss";
+@import "./pwa-ios-modal.scss";
+
+// home page
+@import "./home/home-catalog.scss";
+@import "./home/home-about.scss";
+@import "./home/home-alert.scss";
+@import "./home/home-news.scss";
+
+//applicant page
+@import "./applicant/applicant-hero.scss";
+@import "./applicant/applicant-advantages.scss";
+@import "./applicant/applicant-about.scss";
+@import "./applicant/applicant-info.scss";
+@import "./applicant/applicant-history.scss";
+@import "./applicant/applicant-vacancy.scss";
+@import "./applicant/applicant-alert.scss";
+
+//about page
+@import "./about/about-info.scss";
+@import "./about/about-mission.scss";
+@import "./about/about-socials.scss";
+@import "./about/about-direction.scss";
+
+//services page
+@import "./services/services-hero.scss";
+@import "./services/services-about.scss";
+
+//news page
+@import "./news/news-content.scss";
+
+//news item page
+@import "./news-item/news-item-hero.scss";
+@import "./news-item/news-item-content.scss";
+@import "./news-item/news-item-another.scss";
+
+//documents page
+@import "./documents/documents-content.scss";
+
+//contacts page
+@import "./contacts/contacts-content.scss";
+
+//vacancy page
+@import "./vacancy/vacancy-hero.scss";
+@import "./vacancy/vacancy-content.scss";
+
+//price page
+@import "./price/price-filters.scss";
+@import "./price/price-table.scss";
+@import "./price/price-fix-table.scss";
+@import "./price/price-info.scss";
+
+//error page
+@import "./error/error-hero.scss";
+
+//policy page
+@import "./policy/policy-hero.scss";
+@import "./policy/policy-content.scss";
+
+//register page
+@import "./register/register-content.scss";
+
+//register gartitude page
+@import "./register-gartitude/register-gartitude.scss";
+
+//login page
+@import "./login/login-content.scss";
+
+//recover password page
+@import "./recover-password/recover-password.scss";
+
+//accreditation documents page
+@import "./accreditation-documents/accreditation-documents.scss";
+
+//accreditation application page
+@import "./accreditation-application/accreditation-application.scss";
+
+//framework agreement page
+@import "./framework-agreement/framework-agreement.scss";
+
+//framework agreement success page
+@import "./framework-agreement-success/framework-agreement-success.scss";
+
+//account settings page
+@import "./account-settings/account-settings.scss";
+
+//account notifications page
+@import "./account-notifications/account-notifications.scss";
+
+//account support page
+@import "./account-support/account-support.scss";
+
+//account documents trade page
+@import "./account-documents-trade/account-documents-trade.scss";
+
+//account applications page
+@import "./account-applications/account-applications.scss";
+
+//sample page page
+@import "./sample-page/sample-page.scss";
+@import "./sample-page/sample-page-hero.scss";

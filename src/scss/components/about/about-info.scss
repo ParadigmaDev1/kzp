@@ -1,0 +1,48 @@
+.about-info {
+  background: var(--accent-1-color);
+  padding-top: 128px;
+  padding-bottom: 128px;
+  @media (max-width: $tab) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .about-info-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 48px;
+    @media (max-width: $tab) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .text-block {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      .hide-text {
+        @include body-m;
+        display: none;
+        margin-bottom: 20px;
+        @media (max-width: $tab) {
+          display: block;
+        }
+      }
+      .title {
+        @include h2;
+        text-transform: uppercase;
+      }
+      .descr {
+        @include body-l;
+      }
+    }
+    .image-block {
+      position: relative;
+      padding-bottom: 40%;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

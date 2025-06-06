@@ -1,0 +1,16 @@
+.applicant-advantages {
+  grid-template-columns: 0.9fr 1fr 0.9fr;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--line-color);
+  @media (max-width: $tab-sm) {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .advantage-item {
+    @media (max-width: $tab-sm) {
+      &:first-child {
+        border-top: 1px solid var(--line-color);
+      }
+    }
+  }
+}

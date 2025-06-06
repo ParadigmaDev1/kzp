@@ -1,0 +1,493 @@
+<div class="accreditation-documents container">
+  <div class="accreditation-documents-top">
+    <div class="breadcrumbs black">
+      <a href="home.html">
+        <svg
+          width="16"
+          height="17"
+          viewBox="0 0 16 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.5 16V5.77712L8 1.08962L15.5 5.77712V16H0.5Z"
+            stroke="white"
+          />
+        </svg>
+      </a>
+      <img src="@img/breadcrumbs-black-arrow.svg" alt="arrow" />
+      <a href="contacts.html"> Личный кабинет </a>
+    </div>
+    <h1>аккредитация</h1>
+  </div>
+  <div class="accreditation-documents-content">
+    <div class="accreditation-documents-content-main">
+      <p class="subtitle">
+        Для начала работы необходимо пройти аккредитацию. <br />Пожалуйста,
+        укажите тип организации, способ оплаты и загрузите необходимые документы
+      </p>
+      <div class="filter">
+        <div class="filter-row">
+          <div class="filter-row-wrapper">
+            <p class="title">выберите Тип организации</p>
+            <div
+              class="selector filter-selector custom-radio-selector org-selector"
+            >
+              <button type="button" class="selector-btn">
+                <div class="selector-title custom-radio">
+                  <div class="text-content">
+                    <input type="radio" name="org" checked />
+                    <div class="bg"></div>
+                    <p>Сельхозтоваропроизводитель</p>
+                  </div>
+                </div>
+                <div class="icon">
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="27.5"
+                      y="0.5"
+                      width="27"
+                      height="27"
+                      rx="13.5"
+                      transform="rotate(90 27.5 0.5)"
+                      stroke="#3E3E3E"
+                      stroke-opacity="0.15"
+                    />
+                    <path d="M19 12L14.125 18L9.25 12" stroke="#2C2C2C" />
+                  </svg>
+                </div>
+              </button>
+              <div class="selector-content">
+                <div class="selector-list">
+                  <label class="custom-radio">
+                    <input type="radio" name="org" value="selhoz" checked />
+                    <div class="bg"></div>
+                    <p>Сельхозтоваропроизводитель</p>
+                  </label>
+                  <label class="custom-radio">
+                    <input type="radio" name="org" value="trade" />
+                    <div class="bg"></div>
+                    <p>Трейдер</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-row">
+          <div class="filter-row-wrapper">
+            <p class="title">выберите Способ оплаты</p>
+            <div
+              class="selector filter-selector custom-checkbox-selector paymethod-selector"
+            >
+              <button type="button" class="selector-btn">
+                <div class="selector-title custom-radio">
+                  <div class="text-content">
+                    <p>с ндс</p>
+                  </div>
+                </div>
+                <div class="icon">
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="27.5"
+                      y="0.5"
+                      width="27"
+                      height="27"
+                      rx="13.5"
+                      transform="rotate(90 27.5 0.5)"
+                      stroke="#3E3E3E"
+                      stroke-opacity="0.15"
+                    />
+                    <path d="M19 12L14.125 18L9.25 12" stroke="#2C2C2C" />
+                  </svg>
+                </div>
+              </button>
+              <div class="selector-content">
+                <div class="selector-list">
+                  <label class="custom-radio">
+                    <input type="radio" name="paymethod" checked value="nds" />
+                    <div class="bg"></div>
+                    <p>с ндс</p>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="paymethod" value="no-nds" />
+
+                    <div class="bg"></div>
+                    <p>без ндс</p>
+                  </label>
+                </div>
+                <button class="btn success-checkbox-selector">применить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="documents-list-wrapper">
+        <div class="documents-list-top">
+          <p class="title">загрузите требуемые документы</p>
+          <p class="total-documents">добавлено: 0 из 25</p>
+        </div>
+        <div class="documents-list">
+          <div class="documents-item">
+            <img
+              src="@img/accreditation-documents/document.svg"
+              alt="document"
+            />
+            <div class="documents-item-content">
+              <div class="documents-item-content-top">
+                <p class="title">
+                  Карточка партнера с образцами подписей лиц, имеющих право
+                  подписи и оттиском печати
+                </p>
+                <button>
+                  <img src="@img/accreditation-documents/icon.svg" alt="info" />
+                </button>
+              </div>
+              <label class="documents-item-content-input-wrapper">
+                <input type="file" />
+                <div class="clip">
+                  <img src="@img/accreditation-documents/clip.svg" alt="clip" />
+                  <p>Прикрепить файл</p>
+                </div>
+                <p class="condition">Не более 10 мб</p>
+              </label>
+            </div>
+          </div>
+          <div class="documents-item">
+            <img
+              src="@img/accreditation-documents/document.svg"
+              alt="document"
+            />
+            <div class="documents-item-content">
+              <div class="documents-item-content-top">
+                <p class="title">
+                  Свидетельство о постановке на налоговый учет (ИНН)
+                </p>
+                <button>
+                  <img src="@img/accreditation-documents/icon.svg" alt="info" />
+                </button>
+              </div>
+              <label class="documents-item-content-input-wrapper">
+                <input type="file" />
+                <div class="clip">
+                  <img src="@img/accreditation-documents/clip.svg" alt="clip" />
+                  <p>Прикрепить файл</p>
+                </div>
+                <p class="condition">Не более 10 мб</p>
+              </label>
+            </div>
+          </div>
+          <div class="documents-item">
+            <img
+              src="@img/accreditation-documents/document.svg"
+              alt="document"
+            />
+            <div class="documents-item-content">
+              <div class="documents-item-content-top">
+                <p class="title">
+                  Доверенность на право заключения договора (в случаях, когда
+                  договор заключается лицом, действующим на основании
+                  доверенности)
+                </p>
+                <button>
+                  <img src="@img/accreditation-documents/icon.svg" alt="info" />
+                </button>
+              </div>
+              <label class="documents-item-content-input-wrapper">
+                <input type="file" />
+                <div class="clip">
+                  <img src="@img/accreditation-documents/clip.svg" alt="clip" />
+                  <p>Прикрепить файл</p>
+                </div>
+                <p class="condition">Не более 10 мб</p>
+              </label>
+            </div>
+          </div>
+          <div class="documents-item">
+            <img
+              src="@img/accreditation-documents/document.svg"
+              alt="document"
+            />
+            <div class="documents-item-content">
+              <div class="documents-item-content-top">
+                <p class="title">Учредительный договор (ПРИ НАЛИЧИИ)</p>
+                <button>
+                  <img src="@img/accreditation-documents/icon.svg" alt="info" />
+                </button>
+              </div>
+              <label class="documents-item-content-input-wrapper">
+                <input type="file" />
+                <div class="clip">
+                  <img src="@img/accreditation-documents/clip.svg" alt="clip" />
+                  <p>Прикрепить файл</p>
+                </div>
+                <p class="condition">Не более 10 мб</p>
+              </label>
+            </div>
+          </div>
+          <div class="documents-item">
+            <img
+              src="@img/accreditation-documents/document.svg"
+              alt="document"
+            />
+            <div class="documents-item-content">
+              <div class="documents-item-content-top">
+                <p class="title">
+                  Устав ЮЛ действующей редакции (ВСЕ СТРАНИЦЫ)
+                </p>
+                <button>
+                  <img src="@img/accreditation-documents/icon.svg" alt="info" />
+                </button>
+              </div>
+              <label class="documents-item-content-input-wrapper">
+                <input type="file" />
+                <div class="clip">
+                  <img src="@img/accreditation-documents/clip.svg" alt="clip" />
+                  <p>Прикрепить файл</p>
+                </div>
+                <p class="condition">Не более 10 мб</p>
+              </label>
+            </div>
+          </div>
+          <div class="documents-item">
+            <img
+              src="@img/accreditation-documents/document.svg"
+              alt="document"
+            />
+            <div class="documents-item-content">
+              <div class="documents-item-content-top">
+                <p class="title">
+                  Карточка партнера с образцами подписей лиц, имеющих право
+                  подписи и оттиском печати
+                </p>
+                <button>
+                  <img src="@img/accreditation-documents/icon.svg" alt="info" />
+                </button>
+              </div>
+              <label class="documents-item-content-input-wrapper">
+                <input type="file" />
+                <div class="clip">
+                  <img src="@img/accreditation-documents/clip.svg" alt="clip" />
+                  <p>Прикрепить файл</p>
+                </div>
+                <p class="condition">Не более 10 мб</p>
+              </label>
+            </div>
+          </div>
+          <div class="documents-item">
+            <img
+              src="@img/accreditation-documents/document.svg"
+              alt="document"
+            />
+            <div class="documents-item-content">
+              <div class="documents-item-content-top">
+                <p class="title">
+                  Свидетельство о постановке на налоговый учет (ИНН)
+                </p>
+                <button>
+                  <img src="@img/accreditation-documents/icon.svg" alt="info" />
+                </button>
+              </div>
+              <label class="documents-item-content-input-wrapper">
+                <input type="file" />
+                <div class="clip">
+                  <img src="@img/accreditation-documents/clip.svg" alt="clip" />
+                  <p>Прикрепить файл</p>
+                </div>
+                <p class="condition">Не более 10 мб</p>
+              </label>
+            </div>
+          </div>
+          <div class="documents-item">
+            <img
+              src="@img/accreditation-documents/document.svg"
+              alt="document"
+            />
+            <div class="documents-item-content">
+              <div class="documents-item-content-top">
+                <p class="title">
+                  Доверенность на право заключения договора (в случаях, когда
+                  договор заключается лицом, действующим на основании
+                  доверенности)
+                </p>
+                <button>
+                  <img src="@img/accreditation-documents/icon.svg" alt="info" />
+                </button>
+              </div>
+              <label class="documents-item-content-input-wrapper">
+                <input type="file" />
+                <div class="clip">
+                  <img src="@img/accreditation-documents/clip.svg" alt="clip" />
+                  <p>Прикрепить файл</p>
+                </div>
+                <p class="condition">Не более 10 мб</p>
+              </label>
+            </div>
+          </div>
+          <div class="documents-item">
+            <img
+              src="@img/accreditation-documents/document.svg"
+              alt="document"
+            />
+            <div class="documents-item-content">
+              <div class="documents-item-content-top">
+                <p class="title">Учредительный договор (ПРИ НАЛИЧИИ)</p>
+                <button>
+                  <img src="@img/accreditation-documents/icon.svg" alt="info" />
+                </button>
+              </div>
+              <label class="documents-item-content-input-wrapper">
+                <input type="file" />
+                <div class="clip">
+                  <img src="@img/accreditation-documents/clip.svg" alt="clip" />
+                  <p>Прикрепить файл</p>
+                </div>
+                <p class="condition">Не более 10 мб</p>
+              </label>
+            </div>
+          </div>
+          <div class="documents-item">
+            <img
+              src="@img/accreditation-documents/document.svg"
+              alt="document"
+            />
+            <div class="documents-item-content">
+              <div class="documents-item-content-top">
+                <p class="title">
+                  Устав ЮЛ действующей редакции (ВСЕ СТРАНИЦЫ)
+                </p>
+                <button>
+                  <img src="@img/accreditation-documents/icon.svg" alt="info" />
+                </button>
+              </div>
+              <label class="documents-item-content-input-wrapper">
+                <input type="file" />
+                <div class="clip">
+                  <img src="@img/accreditation-documents/clip.svg" alt="clip" />
+                  <p>Прикрепить файл</p>
+                </div>
+                <p class="condition">Не более 10 мб</p>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="documents-list-wrapper">
+        <div class="documents-list-top">
+          <p class="title">
+            Если документ отсутствует, нажмите на переключатель
+          </p>
+        </div>
+        <div class="documents-list">
+          <div class="documents-item">
+            <img
+              src="@img/accreditation-documents/document.svg"
+              alt="document"
+            />
+            <div class="documents-item-content">
+              <div class="documents-item-content-top">
+                <p class="title">Учредительный договор (ПРИ НАЛИЧИИ)</p>
+                <button>
+                  <img src="@img/accreditation-documents/icon.svg" alt="info" />
+                </button>
+              </div>
+              <label class="documents-item-content-input-wrapper">
+                <input type="file" />
+                <div class="clip">
+                  <img src="@img/accreditation-documents/clip.svg" alt="clip" />
+                  <p>Прикрепить файл</p>
+                </div>
+                <div class="condition-wrapper">
+                  <p class="condition">Не более 10 мб</p>
+                  <div class="checkbox-wrapper">
+                    <label class="checkbox-ios">
+                      <input type="checkbox" />
+
+                      <span class="checkbox-ios-switch"></span>
+                    </label>
+                    <p>Отсутствует</p>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn secondary yellow accept-documents-btn" disabled>
+        отправить на аккредитацию
+      </button>
+    </div>
+    <div class="menu-block">
+      <div class="sticky-block">
+        <nav class="menu-navigation">
+          <a href="#" class="active">
+            <span>1</span>
+            Аккредитация
+          </a>
+          <a href="#">
+            <span>2</span>
+            Рамочный договор
+          </a>
+          <button class="exit-btn">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_5843_36467)">
+                <path d="M9.5 17.5L0.5 17.5L0.5 0.5L9.5 0.5" stroke="#8C8C8C" />
+                <path
+                  d="M4.5 9H17M17 9L12.7143 14M17 9L12.7143 4"
+                  stroke="#8C8C8C"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_5843_36467">
+                  <rect width="18" height="18" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            Выйти
+          </button>
+        </nav>
+        <div class="menu-contacts">
+          <p>
+            Если остались вопросы, свяжитесь с нашим менеджером любым удобным
+            способом:
+          </p>
+          <div class="menu-contacts-list">
+            <a href="tel:+78612040272">
+              <img src="@img/accreditation-documents/phone.svg" alt="phone" />+7
+              (861) 204-02-72 доб. 605
+            </a>
+            <a href="mailto:dogovor@kzpgroup.ru">
+              <img
+                src="@img/accreditation-documents/mail.svg"
+                alt="mail"
+              />dogovor@kzpgroup.ru
+            </a>
+            <p>
+              <img src="@img/accreditation-documents/clock.svg" alt="clock" />
+              Пн-Пт c 8:30-17:30
+            </p>
+          </div>
+          <button class="btn secondary yellow ask-btn">задать вопрос</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

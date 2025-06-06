@@ -1,0 +1,20 @@
+.applicant-about {
+  margin-top: 128px;
+  @media (max-width: $tab) {
+    margin-top: 80px;
+  }
+  .text-wrapper {
+    margin-top: 28px !important;
+  }
+  .image-block {
+    padding-bottom: 100% !important;
+    .shapes {
+      height: 80% !important;
+      bottom: 0 !important;
+      top: auto !important;
+    }
+    .shapes-reverse {
+      left: 0;
+    }
+  }
+}

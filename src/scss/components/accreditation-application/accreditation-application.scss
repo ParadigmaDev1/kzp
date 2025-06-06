@@ -1,0 +1,238 @@
+.accreditation-application {
+  margin-top: 105px;
+  margin-bottom: 128px;
+  min-height: 66vh;
+  @media (max-width: $tab) {
+    margin-top: 85px;
+    margin-bottom: 0;
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--line-color);
+  }
+  h1 {
+    text-transform: uppercase;
+    @include h1;
+    margin-top: 28px;
+    @media (max-width: $tab) {
+      margin-top: 20px;
+    }
+  }
+  .accreditation-application-content {
+    display: grid;
+    grid-template-columns: 1fr 318px;
+    gap: 48px;
+    .accreditation-application-content-main {
+      margin-top: 36px;
+      .accreditation-application-status {
+        display: flex;
+        padding: 48px 0;
+        border-top: 1px solid var(--line-color);
+        border-bottom: 1px solid var(--line-color);
+        align-items: flex-start;
+        img {
+          width: 69px;
+          height: 64px;
+          margin-right: 45px;
+        }
+        .accreditation-application-status-content {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          flex: 1;
+          .title {
+            text-transform: uppercase;
+            @include h4;
+          }
+          .info {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            & > li {
+              display: grid;
+              grid-template-columns: 164px 1fr;
+              gap: 16px;
+              align-items: flex-start;
+              .label {
+                @include descr-s;
+                color: var(--gray-2-color);
+                margin-top: 2px;
+              }
+              .value {
+                @include body-m;
+                ul {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 16px;
+                  list-style: none;
+                  margin-top: 10px;
+                  li {
+                    position: relative;
+                    padding-left: 40px;
+                    @include body-m;
+                    &:before {
+                      content: "";
+                      position: absolute;
+                      left: 0;
+                      top: 10px;
+                      width: 8px;
+                      height: 8px;
+                      background: var(--accent-1-color);
+                      border-radius: 999px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .status-code {
+          border-radius: 999px;
+          padding: 10px 16px;
+          text-transform: uppercase;
+          @include descr-s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--white-color);
+
+          &.under-review {
+            background: var(--gray-2-color);
+          }
+          &.required-modification {
+            background: var(--accent-2-color);
+          }
+          &.reject {
+            background: var(--red-color);
+          }
+        }
+      }
+      .accreditation-application-info {
+        margin-top: 48px;
+        .title {
+          text-transform: uppercase;
+          @include h4;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          list-style: none;
+          margin-top: 20px;
+          li {
+            position: relative;
+            padding-left: 40px;
+            @include body-m;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 10px;
+              width: 8px;
+              height: 8px;
+              background: var(--accent-1-color);
+              border-radius: 999px;
+            }
+          }
+        }
+      }
+      .documents-list-wrapper {
+        margin-top: 48px;
+        .documents-list-top {
+          display: flex;
+          justify-content: space-between;
+          .title {
+            @include descr-m;
+            text-transform: uppercase;
+          }
+          .total-documents {
+            @include descr-s;
+            text-transform: uppercase;
+            color: var(--gray-2-color);
+          }
+        }
+        .documents-list {
+          display: flex;
+          flex-direction: column;
+          margin-top: 24px;
+          gap: 24px;
+          .documents-item {
+            display: flex;
+            gap: 20px;
+            padding-top: 24px;
+            border-top: 1px solid var(--line-color);
+            &:last-child {
+              border-bottom: 1px solid var(--line-color);
+              padding-bottom: 24px;
+            }
+            & > img {
+              width: 32px;
+              height: 40px;
+            }
+            .documents-item-content {
+              width: 100%;
+
+              .documents-item-content-top {
+                display: flex;
+                gap: 10px;
+                .title {
+                  @include body-m;
+                }
+              }
+              .documents-item-content-input-wrapper {
+                margin-top: 10px;
+                border: 2px dashed var(--accent-2-color);
+                border-radius: 12px;
+                padding: 19px 17px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+
+                input {
+                  display: none;
+                }
+                .clip {
+                  display: flex;
+                  align-items: center;
+                  gap: 15px;
+
+                  img {
+                    width: 16px;
+                    height: 16px;
+                  }
+                  p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 128%;
+                    color: var(--accent-2-color);
+                  }
+                }
+                .condition-wrapper {
+                  display: flex;
+                  align-items: center;
+                  gap: 36px;
+                  .checkbox-wrapper {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    p {
+                      @include body-s;
+                    }
+                  }
+                }
+                .condition {
+                  font-weight: 500;
+                  font-size: 12px;
+                  line-height: 120%;
+                  color: var(--gray-2-color);
+                }
+              }
+            }
+          }
+        }
+      }
+      .accept-documents-btn {
+        margin-top: 36px;
+      }
+    }
+  }
+}

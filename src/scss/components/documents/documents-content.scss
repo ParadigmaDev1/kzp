@@ -1,0 +1,195 @@
+.documents-content {
+  margin-top: 48px;
+  margin-bottom: 128px;
+  display: grid;
+  grid-template-columns: 1fr 294px;
+  gap: 48px;
+
+  @media (max-width: $tab) {
+    grid-template-columns: 1fr;
+    margin-top: 28px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+  .documents-block {
+    .documents-block-filters {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      @media (max-width: $tab) {
+        gap: 12px;
+      }
+    }
+    .documents-list {
+      margin-top: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      @media (max-width: $tab) {
+        margin-top: 28px;
+      }
+      .accordion-item {
+        border-top: none;
+        border-bottom: none;
+        @media (max-width: $tab) {
+          border-top: 1px solid var(--gray-2-color);
+          padding-bottom: 28px;
+          padding-top: 28px;
+        }
+        &.active {
+          .text {
+            .title {
+              color: var(--accent-2-color);
+            }
+          }
+          svg {
+            transform: rotate(180deg);
+
+            path {
+              stroke: var(--accent-2-color);
+            }
+          }
+        }
+        .accordion-title {
+          padding: 0;
+          pointer-events: none;
+          user-select: auto;
+          margin-bottom: 28px;
+          display: flex;
+          justify-content: space-between;
+          @media (max-width: $tab) {
+            pointer-events: all;
+          }
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            @media (max-width: $tab) {
+              pointer-events: none;
+            }
+            .title {
+              @include h4;
+              text-transform: uppercase;
+              transition: var(--trs-300);
+            }
+            .descr {
+              @include body-m;
+              letter-spacing: 0;
+              @media (max-width: $tab) {
+                @include body-s;
+              }
+            }
+          }
+          p {
+            text-align: left;
+          }
+        }
+        .icon-wrapper {
+          display: none;
+          min-width: 28px;
+          min-height: 28px;
+          max-width: 28px;
+          max-height: 28px;
+          svg {
+            transition: var(--trs-300);
+          }
+          @media (max-width: $tab) {
+            display: block;
+          }
+          &:after,
+          &:before {
+            display: none;
+          }
+        }
+      }
+      .accordion-body {
+        padding-bottom: 0;
+        .document-item {
+          display: grid;
+          grid-template-columns: 15px 1fr 170px;
+          align-items: center;
+          gap: 40px;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          border-top: 1px solid var(--line-color);
+          @media (max-width: $tab-sm) {
+            grid-template-columns: 15px 1fr;
+            align-items: flex-start;
+            gap: 12px;
+
+            grid-template-areas: "number content" "download download";
+          }
+          &:last-child {
+            border-bottom: 1px solid var(--line-color);
+          }
+          .number {
+            @include descr-m;
+            color: var(--gray-2-color);
+            @media (max-width: $tab-sm) {
+              grid-area: number;
+            }
+          }
+          .document-item-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            @media (max-width: $tab-sm) {
+              grid-area: content;
+              align-items: flex-start;
+            }
+            p {
+              @include body-m;
+            }
+          }
+          .download-btn {
+            color: var(--accent-2-color);
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            @media (max-width: $tab-sm) {
+              grid-area: download;
+              margin-left: 80px;
+              width: fit-content;
+            }
+          }
+        }
+      }
+    }
+  }
+  .documents-info {
+    .sticky-block {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .title {
+          @include h4;
+          text-transform: uppercase;
+        }
+        .descr {
+          @include body-m;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          @include body-m;
+          color: var(--accent-2-color);
+        }
+      }
+      .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .btn {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

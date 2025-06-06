@@ -1,0 +1,113 @@
+.contacts-content {
+  margin-top: 105px;
+  margin-bottom: 128px;
+  @media (max-width: $tab) {
+    margin-top: 85px;
+    margin-bottom: 0;
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--line-color);
+  }
+  h1 {
+    text-transform: uppercase;
+    @include h1;
+    margin-top: 28px;
+    @media (max-width: $tab) {
+      margin-top: 20px;
+    }
+  }
+  .contacts-content-bottom {
+    display: grid;
+    grid-template-columns: 0.67fr 1fr;
+    gap: 48px;
+    align-items: flex-start;
+    margin-top: 37px;
+    @media (max-width: $tab) {
+      grid-template-columns: 1fr;
+      gap: 64px;
+    }
+    .contacts-info {
+      display: flex;
+      flex-direction: column;
+      min-width: 521px;
+      @media (max-width: $tab) {
+        min-width: 100%;
+      }
+      .contacts-info-item {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid var(--line-color);
+        display: grid;
+        grid-template-columns: 0.7fr 1fr;
+        gap: 26px;
+        @media (max-width: $tab) {
+          padding-top: 24px;
+          padding-bottom: 24px;
+          &:first-child {
+            padding-top: 0;
+            border-top: none;
+          }
+          &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+          }
+        }
+        @media (max-width: $tab-sm) {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+        &:first-child {
+          border-top: 1px solid var(--line-color);
+        }
+        .title {
+          text-transform: uppercase;
+          @include h4;
+        }
+        .info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .address {
+            @include body-m;
+          }
+          a {
+            transition: var(--trs-300);
+            @include body-m;
+            &:last-child {
+              color: var(--accent-2-color);
+            }
+            &:hover {
+              color: var(--accent-2-color);
+            }
+          }
+          .info-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .socials {
+              display: flex;
+              gap: 6px;
+            }
+          }
+        }
+      }
+    }
+    .map-wrapper {
+      width: 100%;
+      position: relative;
+      padding-bottom: 77.5%;
+      @media (max-width: $tab) {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-bottom: 0;
+        height: 360px;
+        width: auto;
+      }
+      .map {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.policy-content {
+  margin-top: 36px;
+
+  margin-bottom: 80px;
+  @media (max-width: $tab) {
+    margin-top: 28px;
+  }
+  .policy-content-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    max-width: 66%;
+    @media (max-width: $tab-sm) {
+      max-width: 100%;
+    }
+  }
+  p {
+    @include body-m;
+  }
+  h2 {
+    text-transform: uppercase;
+    @include h2;
+    padding-top: 15px;
+  }
+  h3 {
+    text-transform: uppercase;
+    @include h3;
+    padding-top: 15px;
+  }
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    li {
+      position: relative;
+      padding-left: 40px;
+      @include body-m;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background: var(--accent-1-color);
+        border-radius: 999px;
+      }
+    }
+  }
+}

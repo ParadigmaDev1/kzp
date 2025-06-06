@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/components/head.html', { 'title':'KZP', })
+  <body>
+    @@include('html/components/header.html', { })
+    @@include('html/components/menu.html', { })
+    <main>
+      @@include('html/components/price/price-hero.html', { })
+      @@include('html/components/price/price-filters.html', { })
+      @@include('html/components/price/price-fix-table.html', { })
+      @@include('html/components/price/price-table.html', { })
+      @@include('html/components/price/price-table-mob.html', { })
+      @@include('html/components/price/price-info.html', { })
+      @@include('html/components/contacts.html', { })
+    </main>
+    @@include('html/components/footer.html', { })
+    <div class="modals">
+      @@include('html/components/pwa-firefox-modal.html', { })
+      @@include('html/components/pwa-ios-modal.html', { })
+      @@include('html/components/pwa-macos-modal.html', { })
+      @@include('html/components/ttn-modal.html', { })
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

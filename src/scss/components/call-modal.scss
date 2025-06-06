@@ -1,0 +1,122 @@
+.call-modal {
+  .call-modal-content {
+    max-width: 546px;
+    width: 100%;
+    @media (max-width: $tab-sm) {
+      height: fit-content;
+    }
+  }
+
+  .form {
+    h4 {
+      text-transform: uppercase;
+      @include h4;
+    }
+    & > p {
+      margin-top: 12px;
+      @include body-m;
+    }
+
+    .inputs {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      @media (max-width: $tab) {
+        margin-top: 36px;
+      }
+
+      .file-input-wrapper {
+        display: flex;
+        align-items: center;
+      }
+      .output-file-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .clear-file {
+          padding: 0;
+          display: flex;
+          align-items: center;
+          &:hover {
+            svg {
+              path {
+                stroke: var(--accent-2-color);
+              }
+            }
+          }
+        }
+        &.hidden {
+          display: none;
+        }
+        p {
+          @include body-s;
+        }
+      }
+      .file-btn {
+        position: relative;
+        @media (max-width: $pre-mob) {
+          width: 100%;
+        }
+        &.hidden {
+          display: none;
+        }
+        input {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          cursor: pointer;
+        }
+      }
+      .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        @media (max-width: $tab-sm) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        &.lg {
+          gap: 56px;
+          @media (max-width: $tab-sm) {
+            gap: 20px;
+            margin-top: 36px;
+          }
+        }
+      }
+    }
+    .form-bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .checkbox-warpper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        p {
+          @include body-s;
+          a {
+            color: var(--accent-2-color);
+          }
+        }
+      }
+      .btn {
+        @include descr-m;
+        padding: 0 24px;
+        height: 44px;
+        width: fit-content;
+        @media (max-width: $pre-mob) {
+          width: 100%;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

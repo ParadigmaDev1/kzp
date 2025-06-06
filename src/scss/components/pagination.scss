@@ -1,0 +1,43 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .btn {
+    width: 48px;
+    height: 48px;
+    &:hover {
+      svg {
+        rect {
+          fill: var(--accent-2-color);
+        }
+        path {
+          stroke: var(--white-color);
+        }
+      }
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .pages-list {
+    flex: 1;
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    align-items: baseline;
+    .pagination-item {
+      @include h4;
+      transition: var(--trs-300);
+      &.active {
+        color: var(--accent-1-color);
+      }
+      &:hover {
+        color: var(--accent-1-color);
+      }
+    }
+    .dotes {
+      @include h4;
+    }
+  }
+}

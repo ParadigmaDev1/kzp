@@ -1,0 +1,24 @@
+.success-modal {
+  .success-modal-content {
+    max-width: 546px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    width: 70px;
+    height: 64px;
+  }
+  h4 {
+    text-transform: uppercase;
+    @include h2;
+    text-align: center;
+    margin-top: 28px;
+  }
+  p {
+    margin-top: 12px;
+    @include body-m;
+    text-align: center;
+  }
+}

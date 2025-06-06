@@ -1,0 +1,121 @@
+.applicant-history {
+  background: var(--gray-2-color);
+  .applicant-history-inner {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    @media (max-width: $tab) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    h3 {
+      @include h2;
+      text-transform: uppercase;
+      color: var(--white-color);
+    }
+    .applicant-history-swiper-wrapper {
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 36px;
+      margin-top: 48px;
+      position: relative;
+      @media (max-width: $tab) {
+        margin-top: 28px;
+        padding-top: 28px;
+      }
+      .navigation {
+        left: -24px;
+        right: -24px;
+        @media (max-width: $tab-sm) {
+          top: -33%;
+        }
+        @media (max-width: $tab-sm) {
+          left: -14px;
+          right: -14px;
+        }
+      }
+      .applicant-history-swiper {
+        overflow: hidden;
+
+        .swiper-slide {
+          display: grid;
+          grid-template-columns: 0.52fr 1fr;
+          align-items: flex-start;
+          gap: 24px;
+          @media (max-width: $tab-sm) {
+            grid-template-columns: 1fr;
+          }
+          &.swiper-slide-active {
+            padding-right: 48px;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+            @media (max-width: $tab) {
+              padding-right: 0;
+              border-right: none;
+            }
+          }
+          &.swiper-slide-next {
+            padding-left: 48px;
+            @media (max-width: $tab) {
+              padding-left: 0;
+            }
+          }
+          .image-wrapper {
+            position: relative;
+            padding-bottom: 134%;
+            @media (max-width: $tab-sm) {
+              max-width: 64%;
+              width: 100%;
+              margin: auto;
+              padding-bottom: 86%;
+            }
+            img {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .text-block {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            @media (max-width: $tab-sm) {
+              align-items: center;
+              gap: 24px;
+            }
+            span {
+              color: var(--accent-1-color);
+              text-transform: uppercase;
+              @include descr-s;
+              display: block;
+              @media (max-width: $tab-sm) {
+                text-align: center;
+              }
+            }
+            h4 {
+              text-transform: uppercase;
+              margin-top: 16px;
+              @include h4;
+              color: var(--white-color);
+              @media (max-width: $tab-sm) {
+                text-align: center;
+                margin-top: 12px;
+              }
+            }
+            p {
+              margin-top: 24px;
+              color: var(--white-color);
+              @include body-m;
+              @media (max-width: $tab-sm) {
+                text-align: center;
+                margin-top: 16px;
+              }
+            }
+            .btn {
+              display: block;
+              width: fit-content;
+            }
+          }
+        }
+      }
+    }
+  }
+}

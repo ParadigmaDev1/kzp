@@ -1,0 +1,113 @@
+.menu-block {
+  .menu-navigation {
+    display: flex;
+    flex-direction: column;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--gray-2-color);
+      text-transform: uppercase;
+      @include descr-m;
+      padding: 16px 0;
+      border-top: 1px solid var(--line-color);
+      transition: var(--trs-300);
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+      &:hover {
+        color: var(--accent-2-color);
+        svg {
+          path {
+            stroke: var(--accent-2-color);
+          }
+        }
+      }
+      span {
+        @include descr-m;
+        color: var(--gray-2-color);
+      }
+      &.active {
+        svg {
+          path {
+            stroke: var(--accent-2-color);
+          }
+        }
+        color: var(--accent-2-color);
+      }
+      &.success {
+        color: var(--dark-color);
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          background-image: url("../img/success.svg");
+          width: 16px;
+          height: 16px;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+    }
+    .exit-btn {
+      border-top: 1px solid var(--line-color);
+      padding-top: 16px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-transform: uppercase;
+      @include descr-s;
+      transition: var(--trs-300);
+      color: var(--gray-2-color);
+      &:hover {
+        color: var(--accent-2-color);
+        svg {
+          path {
+            stroke: var(--accent-2-color);
+          }
+        }
+      }
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+  .menu-contacts {
+    margin-top: 64px;
+    & > p {
+      text-transform: uppercase;
+      @include descr-l;
+    }
+    .menu-contacts-list {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      p,
+      a {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @include body-m;
+        transition: var(--trs-300);
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      a {
+        &:hover {
+          color: var(--accent-2-color);
+        }
+      }
+    }
+    .ask-btn {
+      margin-top: 24px;
+    }
+  }
+}

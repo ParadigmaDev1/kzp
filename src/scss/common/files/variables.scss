@@ -1,0 +1,31 @@
+:root {
+  --black-color: #000;
+  --white-color: #fff;
+
+  --dark-color: #2c2c2c;
+  --accent-1-color: #ffcc00;
+  --accent-2-color: #ff6600;
+  --red-color: #ef2c2c;
+  --green-color: #6ca946;
+  --line-color: rgba(62, 62, 62, 0.15);
+  --gray-color: #f0f0f0;
+  --gray-2-color: #6e6e6e;
+  --gray-3-color: #f5f5f5;
+
+  --trs-300: 300ms ease;
+  --trs-600: 600ms ease;
+  --trs-800: 800ms ease;
+  --trs-1200: 1200ms ease;
+  --shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  --shadow-inset: 0px 4px 15px 0px rgba(0, 0, 0, 0.15) inset;
+}
+
+$desktop-xl: 2000px;
+$desktop-lg: 1920px;
+$desktop-md: 1440px;
+$desktop-md-2: 1400px;
+$desktop-sm: 1280px;
+$tab: 1024px;
+$tab-sm: 767px;
+$pre-mob: 630px;
+$mob: 500px;

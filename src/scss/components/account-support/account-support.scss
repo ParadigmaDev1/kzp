@@ -1,0 +1,125 @@
+.account-support {
+  .account-content {
+    .account-content-main {
+      .accordion-wrapper {
+        margin-top: 48px;
+
+        & > p {
+          @include h2;
+          text-transform: uppercase;
+        }
+      }
+      .accordion {
+        margin-top: 28px;
+        .accordion-item {
+          .icon-wrapper {
+            svg {
+              transition: var(--trs-300);
+            }
+          }
+          &.active {
+            .icon-wrapper {
+              svg {
+                transform: rotate(180deg);
+              }
+            }
+          }
+          .accordion-title {
+            padding: 24px 0;
+            justify-content: space-between;
+          }
+          .text {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            pointer-events: none;
+            .title {
+              @include descr-l;
+            }
+          }
+          .accordion-body {
+            margin-left: 44px;
+            @include body-m;
+            padding-bottom: 24px;
+          }
+        }
+      }
+      .support-form {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        gap: 48px;
+        margin-top: 80px;
+        .text {
+          .title {
+            text-transform: uppercase;
+            @include h2;
+          }
+          .descr {
+            margin-top: 28px;
+            @include body-m;
+          }
+        }
+        .form {
+          .inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .documents-input-wrapper {
+              margin-top: 10px;
+              border: 2px dashed var(--accent-2-color);
+              border-radius: 12px;
+              padding: 19px 17px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              cursor: pointer;
+
+              input {
+                display: none;
+              }
+              .clip {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                img {
+                  width: 16px;
+                  height: 16px;
+                }
+                p {
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 128%;
+                  color: var(--accent-2-color);
+                }
+              }
+              .condition-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 36px;
+                .checkbox-wrapper {
+                  display: flex;
+                  align-items: center;
+                  gap: 12px;
+                  p {
+                    @include body-s;
+                  }
+                }
+              }
+              .condition {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 120%;
+                color: var(--gray-2-color);
+              }
+            }
+          }
+          .btn {
+            margin-top: 20px;
+            width: 204px;
+          }
+        }
+      }
+    }
+  }
+}

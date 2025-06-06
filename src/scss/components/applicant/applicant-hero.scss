@@ -1,0 +1,8 @@
+.applicant-hero-text {
+  display: none;
+  @media (max-width: $tab) {
+    display: block;
+    margin-top: 28px;
+    @include body-m;
+  }
+}

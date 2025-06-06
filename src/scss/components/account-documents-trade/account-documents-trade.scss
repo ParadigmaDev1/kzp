@@ -1,0 +1,49 @@
+.account-documents-trade {
+  .account-content {
+    .filter {
+      margin-top: 36px;
+    }
+    .tab-content {
+      display: grid;
+      grid-template-columns: 1fr 293px;
+      gap: 100px;
+      margin-top: 36px;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      border-top: 1px solid var(--line-color);
+      border-bottom: 1px solid var(--line-color);
+      & > p {
+        @include descr-m;
+        text-transform: uppercase;
+      }
+      .btn-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .btn {
+          justify-content: center;
+        }
+        p {
+          @include body-s;
+          color: var(--gray-2-color);
+        }
+      }
+      .mail-wrapper {
+        border-radius: 999px;
+        border: 1px solid var(--line-color);
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 16px;
+          height: 16px;
+        }
+        p {
+          @include body-m;
+          margin-left: 12px;
+          margin-right: 39px;
+        }
+      }
+    }
+  }
+}

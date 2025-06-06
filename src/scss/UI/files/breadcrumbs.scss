@@ -1,0 +1,36 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  &.black {
+    a {
+      color: var(--dark-color);
+    }
+    svg {
+      path {
+        stroke: var(--dark-color);
+      }
+    }
+  }
+  a {
+    color: var(--white-color);
+    @include body-s;
+    transition: var(--trs-300);
+    svg {
+      path {
+        transition: var(--trs-300);
+      }
+    }
+    &:last-child {
+      pointer-events: none;
+    }
+    &:hover {
+      color: var(--accent-2-color);
+      svg {
+        path {
+          stroke: var(--accent-2-color);
+        }
+      }
+    }
+  }
+}

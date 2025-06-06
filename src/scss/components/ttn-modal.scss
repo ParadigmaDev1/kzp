@@ -1,0 +1,17 @@
+.ttn-modal {
+  background: rgba(44, 44, 44, 0.5);
+  .ttn-modal-content {
+    max-width: 546px;
+    width: 100%;
+  }
+  h4 {
+    text-transform: uppercase;
+    @include h4;
+  }
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 28px;
+  }
+}

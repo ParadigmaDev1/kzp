@@ -1,0 +1,14 @@
+.news-item-hero {
+  margin-top: 105px;
+  @media (max-width: $tab) {
+    margin-top: 85px;
+  }
+  h1 {
+    text-transform: uppercase;
+    @include h1;
+    margin-top: 28px;
+    @media (max-width: $tab) {
+      margin-top: 20px;
+    }
+  }
+}

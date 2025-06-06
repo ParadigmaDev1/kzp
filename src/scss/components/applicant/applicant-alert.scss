@@ -1,0 +1,114 @@
+.applicant-alert {
+  background-image: url("../img/applicant/alert/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  @media (max-width: $tab) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .applicant-alert-inner {
+    h3 {
+      color: var(--white-color);
+      text-transform: uppercase;
+      @include h2;
+    }
+    .applicant-alert-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 36px;
+      @media (max-width: $tab) {
+        margin-top: 28px;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .applicant-alert-item {
+        padding: 64px 48px;
+        display: grid;
+        align-items: flex-start;
+        gap: 33px;
+        @media (max-width: $tab-sm) {
+          padding: 30px;
+        }
+        &:first-child {
+          background: var(--white-color);
+          grid-template-columns: 1fr 0.48fr;
+          @media (max-width: $pre-mob) {
+            grid-template-columns: 1fr;
+          }
+          .image-wrapper {
+            padding-bottom: 131%;
+          }
+        }
+        &:last-child {
+          grid-template-columns: 1fr 0.26fr;
+          background: var(--gray-2-color);
+          @media (max-width: $pre-mob) {
+            grid-template-columns: 1fr;
+          }
+          .image-wrapper {
+            padding-bottom: 206%;
+          }
+          .text-wrapper {
+            a,
+            p {
+              color: var(--white-color);
+            }
+          }
+        }
+        .text-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 36px;
+          justify-content: space-between;
+          height: 100%;
+          @media (max-width: $tab-sm) {
+            gap: 20px;
+          }
+          .text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @media (max-width: $tab-sm) {
+              gap: 12px;
+            }
+            .title {
+              @include h3;
+              text-transform: uppercase;
+            }
+            .applicant-alert-contacts {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              a {
+                @include body-m;
+                transition: var(--trs-300);
+                width: fit-content;
+                &:hover {
+                  color: var(--accent-2-color);
+                }
+              }
+            }
+          }
+          .btn {
+            width: fit-content;
+          }
+        }
+        .image-wrapper {
+          position: relative;
+          @media (max-width: $pre-mob) {
+            display: none;
+          }
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

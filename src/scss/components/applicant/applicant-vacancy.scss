@@ -1,0 +1,191 @@
+.applicant-vacancy {
+  margin-top: 128px;
+  margin-bottom: 96px;
+  display: grid;
+  grid-template-columns: 1fr 294px;
+  gap: 48px;
+  @media (max-width: $tab) {
+    grid-template-columns: 1fr;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .applicant-vacancy-content {
+    h3 {
+      text-transform: uppercase;
+      @include h2;
+    }
+    .vacancy-filters {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 42px;
+      margin-top: 36px;
+      @media (max-width: $tab) {
+        margin-top: 28px;
+      }
+      @media (max-width: $tab-sm) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+      .selector-wrapper {
+        display: flex;
+        // grid-template-columns: 90px 1fr;
+        align-items: center;
+        gap: 24px;
+        .selector {
+          width: 100%;
+        }
+        .selector-title {
+          p {
+            @media (max-width: $mob) {
+              max-width: 150px;
+            }
+          }
+        }
+        .title {
+          text-transform: uppercase;
+          @include descr-s;
+        }
+      }
+    }
+    .vacancy-list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 36px;
+      margin-bottom: 48px;
+      @media (max-width: $tab-sm) {
+        margin-bottom: 36px;
+      }
+      .vacancy-item {
+        display: grid;
+        grid-template-columns: 24px 1fr minmax(130px, 0.28fr);
+        align-items: flex-start;
+        gap: 30px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        border-top: 1px solid var(--line-color);
+        cursor: pointer;
+        @media (max-width: $tab-sm) {
+          grid-template-areas: "img content" "btn btn";
+          grid-template-columns: 24px 1fr;
+          padding-top: 28px;
+          padding-bottom: 28px;
+        }
+        &:hover {
+          h4 {
+            color: var(--accent-2-color);
+          }
+          .btn.link {
+            color: var(--accent-2-color);
+            svg {
+              rect {
+                fill: var(--accent-2-color);
+              }
+            }
+          }
+        }
+        &:last-child {
+          border-bottom: 1px solid var(--line-color);
+        }
+        img {
+          @media (max-width: $tab-sm) {
+            grid-area: img;
+          }
+        }
+        .vacancy-item-content {
+          @media (max-width: $tab-sm) {
+            grid-area: content;
+          }
+          h4 {
+            @include h4;
+            text-transform: uppercase;
+            transition: var(--trs-300);
+          }
+          .vacancy-info {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            @media (max-width: $tab-sm) {
+              margin-top: 20px;
+            }
+            .price {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 20px;
+              margin-right: 28px;
+            }
+          }
+          .desr {
+            margin-top: 24px;
+            @include body-m;
+            @media (max-width: $tab-sm) {
+              margin-top: 20px;
+            }
+          }
+        }
+        .btn-wrapper {
+          display: flex;
+          justify-content: flex-end;
+          @media (max-width: $tab-sm) {
+            grid-area: btn;
+            justify-content: flex-start;
+            margin-left: 55px;
+          }
+        }
+      }
+    }
+    .btn-wrapper {
+      @media (max-width: $tab-sm) {
+        display: flex;
+        justify-content: center;
+      }
+      .btn.primary {
+        &:after {
+          background-image: url("../img/btn-circle-bottom.svg");
+        }
+      }
+    }
+  }
+  .applicant-vacancy-alert {
+    .sticky-block {
+      background: var(--accent-1-color);
+      padding: 48px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      @media (max-width: $tab-sm) {
+        padding: 36px 43px;
+      }
+      .image-wrapper {
+        position: relative;
+        padding-bottom: 68%;
+        @media (max-width: $tab) {
+          max-width: 50%;
+          width: 100%;
+          margin: auto;
+          padding-bottom: 35%;
+        }
+        @media (max-width: $pre-mob) {
+          max-width: 100%;
+          padding-bottom: 69%;
+        }
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .title {
+        text-align: center;
+        text-transform: uppercase;
+        @include h4;
+      }
+      .btn {
+        margin: auto;
+        width: fit-content;
+      }
+    }
+  }
+}

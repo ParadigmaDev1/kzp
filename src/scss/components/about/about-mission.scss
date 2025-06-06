@@ -1,0 +1,14 @@
+.about-mission {
+  margin-top: 48px;
+  @media (max-width: $tab-sm) {
+    margin-top: 80px;
+  }
+  .about-mission-inner {
+    border-top: 1px solid var(--line-color);
+    padding-top: 128px;
+    @media (max-width: $tab-sm) {
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+}

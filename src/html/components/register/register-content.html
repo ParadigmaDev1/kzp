@@ -1,0 +1,108 @@
+<div class="register-content container">
+  <div class="register-content-top">
+    <div class="breadcrumbs black">
+      <a href="home.html">
+        <svg
+          width="16"
+          height="17"
+          viewBox="0 0 16 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.5 16V5.77712L8 1.08962L15.5 5.77712V16H0.5Z"
+            stroke="white"
+          />
+        </svg>
+      </a>
+      <img src="@img/breadcrumbs-black-arrow.svg" alt="arrow" />
+      <a href="contacts.html"> Регистрация </a>
+    </div>
+    <h1>Регистрация</h1>
+  </div>
+  <div class="register-main-content">
+    <form class="form">
+      <div class="inputs">
+        <div class="input-wrapper">
+          <p class="hint">ИНН *</p>
+          <div class="input__row">
+            <input
+              type="text"
+              class="input form__input-value"
+              placeholder="Введите"
+            />
+            <small class="input__item-small"></small>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <p class="hint">Телефон *</p>
+          <div class="input__row">
+            <input
+              type="tel"
+              class="input form__input-value input__valid-phone"
+              placeholder="Телефон *"
+            />
+            <small class="input__item-small"></small>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <p class="hint">Контактное лицо</p>
+          <div class="input__row">
+            <input
+              type="text"
+              class="input form__input-value"
+              placeholder="Введите"
+            />
+            <small class="input__item-small"></small>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <p class="hint">Почта</p>
+          <div class="input__row">
+            <input
+              type="text"
+              class="input form__input-value"
+              placeholder="Введите"
+            />
+            <small class="input__item-small"></small>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <p class="hint">Пароль</p>
+          <div class="input-container">
+            <div class="input__row">
+              <input
+                type="password"
+                class="input form__input-value"
+                placeholder="Введите"
+              />
+              <small class="input__item-small"></small>
+            </div>
+            <p>*6 символов, латинские буквы и цифры</p>
+          </div>
+        </div>
+      </div>
+      <label class="checkbox-warpper">
+        <input type="checkbox" />
+        <p>
+          Согласен на
+          <a href="#" target="_blank">обработку Персональных данных</a>
+        </p>
+      </label>
+      <button class="btn secondary yellow" disabled>зарегистрироваться</button>
+    </form>
+    <div class="have-account-block">
+      <div class="image-wrapper">
+        <img src="@img/register/img.jpg" alt="login" />
+        <img src="@img/register/shape.svg" alt="shape" class="shape" />
+      </div>
+      <div class="have-account-login">
+        <img src="@img/register/pc.svg" alt="pc" />
+        <div class="login-container">
+          <p>Войдите, если у вас уже есть аккаунт</p>
+          <a href="#" class="btn secondary yellow">войти</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+.air-datepicker {
+  .air-datepicker-cell {
+    &.-selected- {
+      background: var(--accent-1-color);
+      border-radius: 999px;
+      color: var(--dark-color);
+    }
+    &.-range-from- {
+      position: relative;
+      &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 204, 0, 0.3);
+        position: absolute;
+        border-bottom-left-radius: 999px;
+        border-top-left-radius: 999px;
+      }
+    }
+    &.-range-to- {
+      position: relative;
+      &.-other-month- {
+        background: rgba(255, 204, 0, 0.2);
+        color: var(--dark-color);
+
+        &:before {
+          background: rgba(255, 204, 0, 0.1);
+        }
+      }
+      &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 204, 0, 0.3);
+        position: absolute;
+        border-bottom-right-radius: 999px;
+        border-top-right-radius: 999px;
+      }
+    }
+    &.-in-range- {
+      background: rgba(255, 204, 0, 0.3);
+      &.-other-month- {
+        background: rgba(255, 204, 0, 0.1);
+      }
+    }
+  }
+}

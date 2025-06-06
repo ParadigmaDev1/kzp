@@ -1,0 +1,17 @@
+.about-socials {
+  margin-top: 128px;
+  margin-bottom: 80px;
+  @media (max-width: $tab) {
+    margin-top: 80px;
+  }
+  h3 {
+    @include h2;
+    text-transform: uppercase;
+  }
+  .advantage-list {
+    margin-top: 48px;
+    @media (max-width: $tab) {
+      margin-top: 0;
+    }
+  }
+}

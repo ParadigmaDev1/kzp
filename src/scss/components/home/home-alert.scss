@@ -1,0 +1,100 @@
+.home-alert {
+  background-image: url("../img/home/alert/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 133px;
+  @media (max-width: $tab) {
+    margin-top: 80px;
+  }
+  @media (max-width: $tab-sm) {
+    background-image: url("../img/home/alert/bg-mob.jpg");
+  }
+  .home-alert-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 96px;
+    padding-bottom: 96px;
+    @media (max-width: $tab) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    @media (max-width: $tab-sm) {
+      grid-template-columns: 1fr;
+    }
+    .alert-item {
+      display: grid;
+      grid-template-columns: 1fr 0.32fr;
+      align-items: flex-start;
+      gap: 46px;
+      position: relative;
+      @media (max-width: $tab) {
+        grid-template-columns: 1fr 0.5fr;
+        gap: 20px;
+      }
+      @media (max-width: $tab-sm) {
+        grid-template-columns: 1fr 0.3fr;
+      }
+      @media (max-width: $mob) {
+        grid-template-columns: 1fr 0.36fr;
+      }
+      .title {
+        @include h4;
+        color: var(--white-color);
+        text-transform: uppercase;
+      }
+      .image-wrapper {
+        position: relative;
+        padding-bottom: 100%;
+        border-radius: 999px;
+        background: var(--white-color);
+        overflow: hidden;
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &:first-child {
+        padding-right: 48px;
+        @media (max-width: $desktop-sm) {
+          padding-right: 20px;
+        }
+        @media (max-width: $tab-sm) {
+          padding-bottom: 32px;
+          padding-right: 0;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          background: rgba(255, 255, 255, 0.3);
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          @media (max-width: $tab-sm) {
+            width: 100%;
+            height: 1px;
+            top: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+          }
+        }
+      }
+      &:last-child {
+        padding-left: 48px;
+        @media (max-width: $desktop-sm) {
+          padding-left: 20px;
+        }
+        @media (max-width: $tab-sm) {
+          padding-top: 32px;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

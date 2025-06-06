@@ -1,0 +1,65 @@
+.price-filters {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  gap: 53px;
+  @media (max-width: $desktop-md-2) {
+    gap: 20px;
+    grid-template-columns: 1fr 0.5fr;
+  }
+  @media (max-width: $tab) {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $tab) {
+      display: none;
+    }
+    h5 {
+      @include descr-l;
+      text-transform: uppercase;
+    }
+    .info-contacts {
+      margin-top: 10px;
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--line-color);
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 10px;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          @include body-m;
+        }
+        a {
+          @include body-m;
+          transition: var(--trs-300);
+          &:hover {
+            color: var(--accent-2-color);
+          }
+        }
+      }
+    }
+    .info-tag {
+      .tag {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 8px;
+        img {
+          width: 116px;
+          height: 67px;
+        }
+        .btn {
+          width: fit-content;
+        }
+      }
+    }
+  }
+}

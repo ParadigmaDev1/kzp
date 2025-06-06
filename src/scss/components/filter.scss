@@ -1,0 +1,68 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  @media (max-width: $tab) {
+    gap: 12px;
+  }
+  .filter-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    width: 100%;
+    .filter-row-wrapper {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      width: 100%;
+      @media (max-width: $tab-sm) {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+      }
+    }
+    @media (max-width: $tab) {
+      gap: 4px;
+    }
+
+    .title {
+      text-transform: uppercase;
+      @include descr-l;
+      margin-right: 18px;
+      @media (max-width: $tab) {
+        @include descr-s;
+      }
+    }
+    .custom-checkbox,
+    .custom-img-radio,
+    .custom-radio {
+      p {
+        @include descr-m;
+        text-transform: uppercase;
+        @media (max-width: $tab) {
+          @include descr-s;
+        }
+      }
+    }
+  }
+  .clear-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    @include descr-s;
+    transition: var(--trs-300);
+    color: var(--gray-2-color);
+    &:hover {
+      color: var(--accent-2-color);
+      svg {
+        rect,
+        path {
+          stroke: var(--accent-2-color);
+        }
+      }
+    }
+  }
+}

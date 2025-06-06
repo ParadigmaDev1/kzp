@@ -1,0 +1,33 @@
+.account {
+  margin-top: 105px;
+  margin-bottom: 128px;
+  min-height: 66vh;
+  @media (max-width: $tab) {
+    margin-top: 85px;
+    margin-bottom: 0;
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--line-color);
+  }
+  h1 {
+    text-transform: uppercase;
+    @include h1;
+    margin-top: 28px;
+    @media (max-width: $tab) {
+      margin-top: 20px;
+    }
+  }
+  .account-content {
+    display: grid;
+    grid-template-columns: 1fr 318px;
+    gap: 48px;
+    .subtitle {
+      margin-top: 36px;
+      @include body-m;
+    }
+    .tab-content {
+      &.hide {
+        display: none;
+      }
+    }
+  }
+}

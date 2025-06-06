@@ -1,0 +1,71 @@
+.price-info {
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 80px;
+  @media (max-width: $tab) {
+    display: grid;
+  }
+  @media (max-width: $pre-mob) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h5 {
+    @include descr-l;
+    text-transform: uppercase;
+  }
+  .info-contacts {
+    padding-right: 40px;
+    @media (max-width: $pre-mob) {
+      padding-right: 0;
+      padding-bottom: 28px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 10px;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @include body-m;
+      }
+      a {
+        @include body-m;
+        transition: var(--trs-300);
+        &:hover {
+          color: var(--accent-2-color);
+        }
+      }
+    }
+  }
+  .info-tag {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding-left: 40px;
+    border-left: 1px solid var(--line-color);
+    @media (max-width: $pre-mob) {
+      padding-left: 0;
+      padding-top: 28px;
+      border-top: 1px solid var(--line-color);
+      border-left: none;
+    }
+    img {
+      width: 72px;
+      height: 145px;
+      object-fit: contain;
+      @media (max-width: $pre-mob) {
+        width: 93px;
+        height: 141px;
+      }
+    }
+    .tag {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .btn {
+        width: fit-content;
+      }
+    }
+  }
+}
