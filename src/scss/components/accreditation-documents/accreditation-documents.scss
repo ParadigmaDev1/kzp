@@ -47,80 +47,80 @@
         flex-direction: column;
         margin-top: 24px;
         gap: 24px;
-        .documents-item {
-          display: flex;
-          gap: 20px;
-          padding-top: 24px;
-          border-top: 1px solid var(--line-color);
-          &:last-child {
-            border-bottom: 1px solid var(--line-color);
-            padding-bottom: 24px;
-          }
-          & > img {
-            width: 32px;
-            height: 40px;
-          }
-          .documents-item-content {
-            width: 100%;
+        // .documents-item {
+        //   display: flex;
+        //   gap: 20px;
+        //   padding-top: 24px;
+        //   border-top: 1px solid var(--line-color);
+        //   &:last-child {
+        //     border-bottom: 1px solid var(--line-color);
+        //     padding-bottom: 24px;
+        //   }
+        //   & > img {
+        //     width: 32px;
+        //     height: 40px;
+        //   }
+        //   .documents-item-content {
+        //     width: 100%;
 
-            .documents-item-content-top {
-              display: flex;
-              gap: 10px;
-              .title {
-                @include body-m;
-              }
-            }
-            .documents-item-content-input-wrapper {
-              margin-top: 10px;
-              border: 2px dashed var(--accent-2-color);
-              border-radius: 12px;
-              padding: 19px 17px;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              cursor: pointer;
+        //     .documents-item-content-top {
+        //       display: flex;
+        //       gap: 10px;
+        //       .title {
+        //         @include body-m;
+        //       }
+        //     }
+        //     .documents-item-content-input-wrapper {
+        //       margin-top: 10px;
+        //       border: 2px dashed var(--accent-2-color);
+        //       border-radius: 12px;
+        //       padding: 19px 17px;
+        //       display: flex;
+        //       justify-content: space-between;
+        //       align-items: center;
+        //       cursor: pointer;
 
-              input {
-                display: none;
-              }
-              .clip {
-                display: flex;
-                align-items: center;
-                gap: 15px;
+        //       input {
+        //         display: none;
+        //       }
+        //       .clip {
+        //         display: flex;
+        //         align-items: center;
+        //         gap: 15px;
 
-                img {
-                  width: 16px;
-                  height: 16px;
-                }
-                p {
-                  font-weight: 500;
-                  font-size: 16px;
-                  line-height: 128%;
-                  color: var(--accent-2-color);
-                }
-              }
-              .condition-wrapper {
-                display: flex;
-                align-items: center;
-                gap: 36px;
-                .checkbox-wrapper {
-                  display: flex;
-                  align-items: center;
-                  gap: 12px;
-                  p {
-                    @include body-s;
-                  }
-                }
-              }
-              .condition {
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 120%;
-                color: var(--gray-2-color);
-              }
-            }
-          }
-        }
+        //         img {
+        //           width: 16px;
+        //           height: 16px;
+        //         }
+        //         p {
+        //           font-weight: 500;
+        //           font-size: 16px;
+        //           line-height: 128%;
+        //           color: var(--accent-2-color);
+        //         }
+        //       }
+        //       .condition-wrapper {
+        //         display: flex;
+        //         align-items: center;
+        //         gap: 36px;
+        //         .checkbox-wrapper {
+        //           display: flex;
+        //           align-items: center;
+        //           gap: 12px;
+        //           p {
+        //             @include body-s;
+        //           }
+        //         }
+        //       }
+        //       .condition {
+        //         font-weight: 500;
+        //         font-size: 12px;
+        //         line-height: 120%;
+        //         color: var(--gray-2-color);
+        //       }
+        //     }
+        //   }
+        // }
       }
     }
     .accept-documents-btn {

@@ -13,6 +13,16 @@
 }
 .selector {
   position: relative;
+  &.disabled {
+    .selector-btn {
+      background: #f0f0f0;
+      pointer-events: none;
+      .icon,
+      .selector-title {
+        opacity: 0.5;
+      }
+    }
+  }
   .selector-btn {
     display: flex;
     align-items: center;

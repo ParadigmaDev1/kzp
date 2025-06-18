@@ -1,0 +1,36 @@
+.notification-modal {
+  .notification-modal-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 660px;
+  }
+  .date {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    @include descr-s;
+    color: #8c8c8c;
+    img {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .title {
+    text-transform: uppercase;
+    @include h2;
+    margin-top: 24px;
+  }
+  .descr {
+    margin-top: 16px;
+    @include body-m;
+    margin-bottom: 24px;
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .btn {
+    margin-top: 12px;
+    width: fit-content;
+  }
+}

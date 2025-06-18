@@ -1,0 +1,45 @@
+.account-request-delivery {
+  .account-content-main {
+    .price-item-list {
+      margin-top: 36px;
+      padding-top: 36px;
+      padding-bottom: 48px;
+      border-top: 1px solid var(--line-color);
+      border-bottom: 1px solid var(--line-color);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .request-delivery-item {
+        display: flex;
+        gap: 25px;
+        &:first-child {
+          padding-right: 48px;
+          border-right: 1px solid var(--line-color);
+        }
+        &:last-child {
+          padding-left: 48px;
+        }
+        img {
+          width: 90px;
+          height: 90px;
+          object-fit: cover;
+        }
+        .content {
+          .title {
+            text-transform: uppercase;
+            @include h3;
+          }
+          .descr {
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 128%;
+          }
+          .btn {
+            margin-top: 28px;
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+}

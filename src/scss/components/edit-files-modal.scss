@@ -1,0 +1,62 @@
+.edit-files-modal {
+  .title {
+    text-transform: uppercase;
+    @include h2;
+  }
+  .descr {
+    margin-top: 24px;
+    @include body-m;
+    margin-bottom: 24px;
+  }
+  .files {
+    .file-item {
+      margin-top: 10px;
+      border: 2px dashed var(--green-color);
+      border-radius: 12px;
+      padding: 19px 17px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      cursor: pointer;
+      .file-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .file {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          img {
+            width: 16px;
+            height: 16px;
+          }
+          p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 128%;
+          }
+        }
+      }
+      .delete-btn {
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+  .btns {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    .add-btn {
+      &:hover {
+        svg {
+          path {
+            stroke: var(--white-color);
+          }
+        }
+      }
+    }
+  }
+}

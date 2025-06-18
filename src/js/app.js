@@ -23,6 +23,10 @@ import { priceFilters } from "./modules/price-filters.js";
 import { checkbox } from "./modules/checkbox.js";
 import { tabs } from "./modules/tabs.js";
 import { airdate } from "./modules/airdate.js";
+import { RequestDeliveryForm } from "./modules/request-delivery-form.js";
+import { mailSendModal } from "./modules/mail-send-modal.js";
+import { documentsItem } from "./modules/documents-item.js";
+import { accountApplications } from "./modules/account-applications.js";
 // import { sw } from "./modules/sw.js";
 
 isBrowserSupportWebp();
@@ -41,9 +45,13 @@ uploadPDF();
 priceFilters();
 checkbox();
 tabs();
+RequestDeliveryForm();
 //handleAttachFiles();
 // validInputs();
 // formHandle();
+documentsItem();
+mailSendModal();
+accountApplications();
 validateForm();
 
 const textareas = document.querySelectorAll("textarea");

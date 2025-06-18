@@ -44,4 +44,21 @@ export const swiper = () => {
     },
     breakpoints: {},
   });
+  const priceSwiper = new Swiper(".price-request-table-swiper", {
+    modules: [Navigation, Controller],
+    slidesPerView: 3,
+    spaceBetween: 0,
+    navigation: {
+      prevEl: ".price-prev",
+      nextEl: ".price-next",
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 2,
+      },
+      1280: {
+        slidesPerView: 3,
+      },
+    },
+  });
 };

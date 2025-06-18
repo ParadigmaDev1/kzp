@@ -1,0 +1,33 @@
+.email-contract-modal {
+  .email-contract-modal-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 660px;
+  }
+
+  .title {
+    text-transform: uppercase;
+    @include h2;
+    text-align: left;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-top: 24px;
+    width: 100%;
+    .checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 0;
+    width: fit-content;
+  }
+}

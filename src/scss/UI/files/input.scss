@@ -105,3 +105,33 @@ textarea {
 .checkbox-ios.focused .checkbox-ios-switch:before {
   box-shadow: inset 0px 0px 4px #ff5623;
 }
+
+.checkbox {
+  appearance: none;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  border-radius: 4px;
+  position: relative;
+  transition: var(--trs-300);
+  border: 1px solid var(--line-color);
+  cursor: pointer;
+  &:checked {
+    background: rgba(0, 0, 0, 0);
+    &::before {
+      opacity: 1;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/checkbox.svg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    transition: var(--trs-cubic-300);
+    opacity: 0;
+  }
+}

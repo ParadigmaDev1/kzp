@@ -1,0 +1,40 @@
+<div class="email-contract-modal modal">
+  <div class="email-contract-modal-content modal-content">
+    <button class="close-modal close-btn">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M1 23L23 1M23 23L1 1" stroke="#6E6E6E" />
+      </svg>
+    </button>
+    <p class="title">Укажите почту, на которую нужно прислать договор</p>
+    <form>
+      <div class="input__row">
+        <input
+          type="text"
+          class="input form__input-value input__valid-mail"
+          placeholder="Электронная почта"
+        />
+        <small class="input__item-small"></small>
+      </div>
+      <div class="checkbox-wrapper">
+        <label class="checkbox-ios">
+          <input type="checkbox" />
+          <span class="checkbox-ios-switch"></span>
+        </label>
+        <p>Использовать почту указанную при регистрации</p>
+      </div>
+
+      <button
+        class="btn secondary yellow close-modal"
+        data-modal-target="thanks-modal"
+      >
+        отправить
+      </button>
+    </form>
+  </div>
+</div>

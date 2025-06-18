@@ -15,6 +15,7 @@
 @import "./pagination.scss";
 @import "./account.scss";
 @import "./date-picher.scss";
+@import "./documents-item.scss";
 
 // modals
 @import "./ttn-modal.scss";
@@ -22,6 +23,16 @@
 @import "./success-modal.scss";
 @import "./call-modal.scss";
 @import "./pwa-ios-modal.scss";
+@import "./recover-password-modal.scss";
+@import "./mail-send-modal.scss";
+@import "./greeting-modal.scss";
+@import "./edit-files-modal.scss";
+@import "./edit-files-send-modal.scss";
+@import "./congratulations-modal.scss";
+@import "./email-contract-modal.scss";
+@import "./thanks-modal.scss";
+@import "./notification-modal.scss";
+@import "./application-competed-modal.scss";
 
 // home page
 @import "./home/home-catalog.scss";
@@ -117,6 +128,12 @@
 
 //account applications page
 @import "./account-applications/account-applications.scss";
+
+//account request delivery page
+@import "./account-request-delivery/account-request-delivery.scss";
+
+//account request delivery form page
+@import "./account-request-delivery-form/account-request-delivery-form.scss";
 
 //sample page page
 @import "./sample-page/sample-page.scss";

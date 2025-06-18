@@ -1,0 +1,34 @@
+.mail-send-modal {
+  .mail-send-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    width: 69px;
+    height: 64px;
+    margin-bottom: 24px;
+  }
+  .title {
+    text-transform: uppercase;
+    @include h2;
+  }
+  .descr {
+    margin-top: 16px;
+    @include body-m;
+    margin-bottom: 24px;
+  }
+  .timer {
+    @include body-m;
+    color: #8c8c8c;
+    &.hidden {
+      display: none;
+    }
+    span {
+      color: #8c8c8c;
+    }
+  }
+  .btn {
+    margin-top: 12px;
+  }
+}
