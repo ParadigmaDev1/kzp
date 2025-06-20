@@ -52,6 +52,9 @@
     .menu-logo {
       padding-bottom: 28px;
       border-bottom: 1px solid var(--line-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       .logo {
         height: 24px;
         position: relative;
@@ -61,6 +64,17 @@
           position: absolute;
           height: 100%;
           object-fit: contain;
+        }
+      }
+      .account-btn {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        span {
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 90%;
         }
       }
     }

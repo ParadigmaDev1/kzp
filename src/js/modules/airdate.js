@@ -5,6 +5,7 @@ export const airdate = () => {
     new AirDatepicker(input, {
       range: true,
       multipleDatesSeparator: " - ",
+      autoClose: true,
     });
     // IMask(input, {
     //   mask: Date,
@@ -13,7 +14,9 @@ export const airdate = () => {
     // });
   });
   document.querySelectorAll(".date-picker.single").forEach((input) => {
-    new AirDatepicker(input);
+    new AirDatepicker(input, {
+      autoClose: true,
+    });
     // IMask(input, {
     //   mask: Date,
     //   min: new Date(1900, 0, 1),

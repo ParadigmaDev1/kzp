@@ -11,7 +11,14 @@
         padding-bottom: 48px;
         border-top: 1px solid var(--line-color);
         border-bottom: 1px solid var(--line-color);
-
+        @media (max-width: $tab) {
+          padding-top: 28px;
+          padding-bottom: 28px;
+          grid-template-columns: 1fr;
+          gap: 24px;
+          border-top: none;
+          border-bottom: none;
+        }
         &:first-child {
           border-top: none;
           border-bottom: none;
@@ -61,6 +68,10 @@
               grid-template-columns: 148px 1fr;
               gap: 20px;
               align-items: center;
+              @media (max-width: $tab-sm) {
+                grid-template-columns: 1fr;
+                gap: 6px;
+              }
               .hint {
                 @include body-m;
                 color: var(--gray-2-color);

@@ -29,6 +29,13 @@
     .pagination-item {
       @include h4;
       transition: var(--trs-300);
+      @media (max-width: $tab) {
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+          display: none;
+        }
+      }
       &.active {
         color: var(--accent-1-color);
       }

@@ -2,6 +2,9 @@
   .menu-navigation {
     display: flex;
     flex-direction: column;
+    @media (max-width: $tab) {
+      display: none;
+    }
     a {
       display: flex;
       align-items: center;
@@ -79,6 +82,9 @@
   }
   .menu-contacts {
     margin-top: 64px;
+    @media (max-width: $tab) {
+      margin-top: 0;
+    }
     & > p {
       text-transform: uppercase;
       @include descr-l;
@@ -108,6 +114,10 @@
     }
     .ask-btn {
       margin-top: 24px;
+      @media (max-width: $tab-sm) {
+        width: 100%;
+        justify-content: center;
+      }
     }
   }
 }

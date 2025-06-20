@@ -32,6 +32,7 @@ export function validateForm() {
     const countInput = form.querySelector(".input__valid-positive-number");
     const timeInput = form.querySelector(".input__valid-time");
     const dateInput = form.querySelector(".input__valid-date");
+    const numberInput = form.querySelector(".input__valid-number");
 
     let validation = true;
 
@@ -59,6 +60,10 @@ export function validateForm() {
       let re = /^[А-Яа-яA-Za-z\ё\Ё\ \-]/g;
       return re.test(name.value);
     };
+    const isNumber = (number) => {
+      let re = /^[0-9]+$/g;
+      return re.test(number.value);
+    };
 
     const isCount = (count) => {
       let re = /^[0-9]/g;
@@ -84,6 +89,13 @@ export function validateForm() {
         setError(nameInput, "Проверьте поле на правильность заполения.");
       } else {
         setSucces(nameInput, "");
+      }
+      if (numberInput.value === "") {
+        setError(numberInput, "Обязательное поле");
+      } else if (!isNumber(numberInput)) {
+        setError(numberInput, "Проверьте поле на правильность заполения.");
+      } else {
+        setSucces(numberInput, "");
       }
 
       if (phoneInput.value === "") {

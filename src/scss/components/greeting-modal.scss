@@ -20,5 +20,9 @@
 
   .btn {
     margin-top: 12px;
+    @media (max-width: $pre-mob) {
+      width: 100%;
+      justify-content: center;
+    }
   }
 }

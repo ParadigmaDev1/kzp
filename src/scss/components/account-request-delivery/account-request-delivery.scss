@@ -8,20 +8,40 @@
       border-bottom: 1px solid var(--line-color);
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      @media (max-width: $tab) {
+        grid-template-columns: 1fr;
+        margin-top: 28px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+      }
       .request-delivery-item {
         display: flex;
         gap: 25px;
         &:first-child {
           padding-right: 48px;
           border-right: 1px solid var(--line-color);
+          @media (max-width: $tab) {
+            padding-right: 0;
+            padding-bottom: 28px;
+            border-bottom: 1px solid var(--line-color);
+            border-right: none;
+            margin-bottom: 28px;
+          }
         }
         &:last-child {
           padding-left: 48px;
+          @media (max-width: $tab) {
+            padding-left: 0;
+          }
         }
         img {
           width: 90px;
           height: 90px;
           object-fit: cover;
+          @media (max-width: $tab) {
+            width: 64px;
+            height: 64px;
+          }
         }
         .content {
           .title {

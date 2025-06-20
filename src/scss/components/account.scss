@@ -20,9 +20,16 @@
     display: grid;
     grid-template-columns: 1fr 318px;
     gap: 48px;
+    @media (max-width: $tab) {
+      grid-template-columns: 1fr;
+      gap: 64px;
+    }
     .subtitle {
       margin-top: 36px;
       @include body-m;
+      @media (max-width: $tab) {
+        margin-top: 28px;
+      }
     }
     .tab-inner-content,
     .tab-content {

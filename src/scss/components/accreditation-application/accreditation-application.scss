@@ -20,24 +20,47 @@
     display: grid;
     grid-template-columns: 1fr 318px;
     gap: 48px;
+    @media (max-width: $tab) {
+      grid-template-columns: 1fr;
+      gap: 64px;
+    }
     .accreditation-application-content-main {
       margin-top: 36px;
+      @media (max-width: $tab) {
+        margin-top: 28px;
+      }
       .accreditation-application-status {
         display: flex;
         padding: 48px 0;
         border-top: 1px solid var(--line-color);
         border-bottom: 1px solid var(--line-color);
         align-items: flex-start;
+        @media (max-width: $tab) {
+          display: grid;
+          grid-template-columns: 50px 1fr;
+          grid-template-areas: "img status" "content content";
+          align-items: center;
+          padding: 28px 0;
+        }
         img {
           width: 69px;
           height: 64px;
           margin-right: 45px;
+          @media (max-width: $tab) {
+            grid-area: img;
+            width: 44px;
+            height: 40px;
+          }
         }
         .accreditation-application-status-content {
           display: flex;
           flex-direction: column;
           gap: 20px;
           flex: 1;
+          @media (max-width: $tab) {
+            grid-area: content;
+            margin-top: 24px;
+          }
           .title {
             text-transform: uppercase;
             @include h4;
@@ -51,10 +74,15 @@
               grid-template-columns: 164px 1fr;
               gap: 16px;
               align-items: flex-start;
+              @media (max-width: $tab-sm) {
+                grid-template-columns: 1fr;
+                gap: 8px;
+              }
               .label {
                 @include descr-s;
-                color: var(--gray-2-color);
+                color: #8c8c8c;
                 margin-top: 2px;
+                text-transform: uppercase;
               }
               .value {
                 @include body-m;
@@ -93,7 +121,11 @@
           align-items: center;
           justify-content: center;
           color: var(--white-color);
-
+          @media (max-width: $tab) {
+            grid-area: status;
+            width: fit-content;
+            margin-left: auto;
+          }
           &.under-review {
             background: var(--gray-2-color);
           }

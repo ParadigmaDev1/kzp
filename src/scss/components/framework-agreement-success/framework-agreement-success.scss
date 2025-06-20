@@ -20,8 +20,15 @@
     display: grid;
     grid-template-columns: 1fr 318px;
     gap: 48px;
+    @media (max-width: $tab) {
+      grid-template-columns: 1fr;
+      gap: 64px;
+    }
     .framework-agreement-success-content-main {
       margin-top: 36px;
+      @media (max-width: $tab) {
+        margin-top: 28px;
+      }
       .framework-agreement-success-info {
         padding-top: 48px;
         padding-bottom: 48px;
@@ -29,9 +36,18 @@
         border-bottom: 1px solid var(--line-color);
         display: flex;
         gap: 45px;
+        @media (max-width: $tab) {
+          padding-top: 28px;
+          padding-bottom: 28px;
+          gap: 24px;
+        }
         img {
           width: 70px;
           height: 70px;
+          @media (max-width: $tab) {
+            width: 44px;
+            height: 44px;
+          }
         }
         .framework-agreement-success-info-content {
           display: flex;

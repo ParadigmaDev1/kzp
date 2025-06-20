@@ -2,6 +2,23 @@
   .account-content {
     .filter {
       margin-top: 36px;
+      @media (max-width: $tab) {
+        margin-top: 28px;
+      }
+      @media (max-width: $tab-sm) {
+        gap: 20px;
+      }
+      .filter-row-wrapper {
+        @media (max-width: $tab-sm) {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+        .title {
+          @media (max-width: $tab-sm) {
+            color: #8c8c8c;
+          }
+        }
+      }
     }
     .tab-content {
       display: grid;
@@ -12,6 +29,15 @@
       padding-bottom: 36px;
       border-top: 1px solid var(--line-color);
       border-bottom: 1px solid var(--line-color);
+      @media (max-width: $tab) {
+        margin-top: 0;
+        padding-top: 28px;
+        padding-bottom: 28px;
+        border-top: none;
+        border-bottom: none;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
       & > p {
         @include descr-m;
         text-transform: uppercase;

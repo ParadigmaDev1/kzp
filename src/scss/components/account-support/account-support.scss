@@ -3,7 +3,9 @@
     .account-content-main {
       .accordion-wrapper {
         margin-top: 48px;
-
+        @media (max-width: $tab) {
+          margin-top: 28px;
+        }
         & > p {
           @include h2;
           text-transform: uppercase;
@@ -13,6 +15,9 @@
         margin-top: 28px;
         .accordion-item {
           .icon-wrapper {
+            @media (max-width: $tab) {
+              display: none;
+            }
             svg {
               transition: var(--trs-300);
             }
@@ -35,6 +40,7 @@
             pointer-events: none;
             .title {
               @include descr-l;
+              text-align: left;
             }
           }
           .accordion-body {
@@ -49,6 +55,11 @@
         grid-template-columns: 0.8fr 1fr;
         gap: 48px;
         margin-top: 80px;
+        @media (max-width: $tab) {
+          grid-template-columns: 1fr;
+          gap: 28px;
+          margin-top: 48px;
+        }
         .text {
           .title {
             text-transform: uppercase;
@@ -57,6 +68,9 @@
           .descr {
             margin-top: 28px;
             @include body-m;
+            @media (max-width: $tab) {
+              margin-top: 16px;
+            }
           }
         }
         .form {
@@ -117,6 +131,10 @@
           .btn {
             margin-top: 20px;
             width: 204px;
+            justify-content: center;
+            @media (max-width: $pre-mob) {
+              width: 100%;
+            }
           }
         }
       }

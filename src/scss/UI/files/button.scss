@@ -82,6 +82,9 @@ button {
   text-transform: uppercase;
   @include descr-l;
   transition: var(--trs-300);
+  @media (max-width: $tab) {
+    @include descr-m;
+  }
   &:hover {
     background: var(--accent-2-color);
     color: var(--white-color);

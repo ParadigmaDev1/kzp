@@ -27,6 +27,7 @@ import { RequestDeliveryForm } from "./modules/request-delivery-form.js";
 import { mailSendModal } from "./modules/mail-send-modal.js";
 import { documentsItem } from "./modules/documents-item.js";
 import { accountApplications } from "./modules/account-applications.js";
+import { inputMask } from "./modules/input-mask.js";
 // import { sw } from "./modules/sw.js";
 
 isBrowserSupportWebp();
@@ -53,6 +54,7 @@ documentsItem();
 mailSendModal();
 accountApplications();
 validateForm();
+inputMask();
 
 const textareas = document.querySelectorAll("textarea");
 const maxHeight = 320;

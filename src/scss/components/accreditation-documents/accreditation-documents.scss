@@ -19,19 +19,48 @@
     display: grid;
     grid-template-columns: 1fr 318px;
     gap: 48px;
+    @media (max-width: $tab) {
+      grid-template-columns: 1fr;
+    }
     .subtitle {
       margin-top: 36px;
       @include body-m;
+      @media (max-width: $tab) {
+        margin-top: 28px;
+      }
     }
     .filter {
       margin-top: 48px;
+
+      @media (max-width: $tab) {
+        margin-top: 28px;
+      }
+      @media (max-width: $tab-sm) {
+        gap: 20px;
+      }
+      .filter-row-wrapper {
+        @media (max-width: $tab-sm) {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+        .title {
+          @media (max-width: $tab-sm) {
+            color: #8c8c8c;
+          }
+        }
+      }
     }
 
     .documents-list-wrapper {
       margin-top: 48px;
+
       .documents-list-top {
         display: flex;
         justify-content: space-between;
+        @media (max-width: $tab-sm) {
+          flex-direction: column;
+          gap: 12px;
+        }
         .title {
           @include descr-m;
           text-transform: uppercase;
@@ -47,6 +76,10 @@
         flex-direction: column;
         margin-top: 24px;
         gap: 24px;
+        .documents-item {
+          border-top: 1px solid var(--line-color);
+          padding-top: 24px;
+        }
         // .documents-item {
         //   display: flex;
         //   gap: 20px;
@@ -125,6 +158,9 @@
     }
     .accept-documents-btn {
       margin-top: 36px;
+      @media (max-width: $tab) {
+        @include descr-m;
+      }
     }
   }
 }
